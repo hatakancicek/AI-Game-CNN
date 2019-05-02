@@ -24,16 +24,6 @@ model.add(
   })
 );
 
-model.add(
-  tf.layers.conv2d({
-    kernelSize: 3,
-    filters: 32,
-    strides: 1,
-    activation: "relu",
-    kernelInitializer: tf.initializers.glorotNormal()
-  })
-);
-
 model.add(tf.layers.flatten());
 
 model.add(tf.layers.dropout(0.5));
